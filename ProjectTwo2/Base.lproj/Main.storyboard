@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ac-IV-DAm">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="WQA-fK-NZH"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="TfL-48-4N1"/>
                 </viewController>
@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="KBA-ze-jf7"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="vDb-ov-ZZA"/>
                 </viewController>
@@ -75,11 +75,11 @@
             </objects>
             <point key="canvasLocation" x="-655" y="-761"/>
         </scene>
-        <!--Item 2-->
+        <!--Weather-->
         <scene sceneID="tda-cE-ax7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qiW-o6-xN7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="sO5-w6-dd8"/>
+                    <tabBarItem key="tabBarItem" title="Weather" image="cloud.sun.fill" catalog="system" selectedImage="cloud.sun.fill" id="sO5-w6-dd8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IAm-f7-inz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -94,11 +94,11 @@
             </objects>
             <point key="canvasLocation" x="-1336" y="15"/>
         </scene>
-        <!--Item 1-->
+        <!--About Me-->
         <scene sceneID="4im-j6-WDe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZyX-95-Oa6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="kow-4B-pT1"/>
+                    <tabBarItem key="tabBarItem" title="About Me" image="person.fill" catalog="system" selectedImage="person.fill" id="kow-4B-pT1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ai1-b5-0aU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -113,11 +113,11 @@
             </objects>
             <point key="canvasLocation" x="768.11594202898561" y="14.732142857142856"/>
         </scene>
-        <!--Item-->
+        <!--My Bucket List-->
         <scene sceneID="EMf-tC-VNM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B37-gJ-4bJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Jo0-cI-fqT"/>
+                    <tabBarItem key="tabBarItem" title="My Bucket List" image="xmark.bin.fill" catalog="system" selectedImage="xmark.bin.fill" id="Jo0-cI-fqT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P5l-Ms-RPR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -134,6 +134,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cloud.sun.fill" catalog="system" width="128" height="93"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="xmark.bin.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
