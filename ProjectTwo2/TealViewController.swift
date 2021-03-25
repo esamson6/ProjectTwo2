@@ -8,6 +8,19 @@
 import UIKit
 
 class TealViewController: UIViewController {
+    
+    @IBOutlet weak var inputBox: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBAction func convert(_ sender: UIButton) {
+        var convert = Int(inputBox.text!)!
+        
+        convert = (convert - 32) * 5/9
+        
+        resultLabel.text = "\(convert)"
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

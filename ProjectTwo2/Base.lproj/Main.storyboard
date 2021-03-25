@@ -8,49 +8,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Weather Converter-->
         <scene sceneID="MdQ-GX-7G7">
             <objects>
-                <viewController id="2y7-OL-rgz" sceneMemberID="viewController">
+                <viewController id="2y7-OL-rgz" customClass="TealViewController" customModule="ProjectTwo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWs-qD-28Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vOn-Pq-Zs0">
+                                <rect key="frame" x="147" y="222" width="120" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a value in Fahrenheit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCW-as-ADD">
+                                <rect key="frame" x="32" y="149" width="374" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G43-00-rgT">
+                                <rect key="frame" x="166" y="288" width="83" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <color key="highlightedColor" systemColor="systemRedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weather" translatesAutoresizingMaskIntoConstraints="NO" id="BYY-Kx-b7o">
+                                <rect key="frame" x="108" y="373" width="198" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="101-5n-4Cg">
+                                <rect key="frame" x="114" y="634" width="187" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="CONVERT">
+                                    <color key="titleColor" systemColor="systemGrayColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="convert:" destination="2y7-OL-rgz" eventType="touchUpInside" id="oBd-Yz-oNf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WQA-fK-NZH"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TfL-48-4N1"/>
+                    <navigationItem key="navigationItem" title="Weather Converter" id="TfL-48-4N1"/>
+                    <connections>
+                        <outlet property="inputBox" destination="vOn-Pq-Zs0" id="BGS-sN-P4L"/>
+                        <outlet property="resultLabel" destination="G43-00-rgT" id="Ze0-D0-0y0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7b2-fR-Zrc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309" y="15"/>
+            <point key="canvasLocation" x="-310.14492753623193" y="14.732142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--About Me -->
         <scene sceneID="nEF-ex-caf">
             <objects>
-                <viewController id="gRL-ZC-usU" sceneMemberID="viewController">
+                <viewController id="gRL-ZC-usU" customClass="PinkViewController" customModule="ProjectTwo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QbD-u4-Gfe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="KBA-ze-jf7"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vDb-ov-ZZA"/>
+                    <navigationItem key="navigationItem" title="About Me " id="vDb-ov-ZZA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcv-DJ-vyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1678.2608695652175" y="14.732142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--My Bucket List-->
         <scene sceneID="VJQ-3o-1lf">
             <objects>
-                <viewController id="Rdy-1z-MWL" sceneMemberID="viewController">
+                <viewController id="Rdy-1z-MWL" customClass="PurpleViewController" customModule="ProjectTwo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kxr-Nm-n1R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="nNz-0F-nlq"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YLx-Zd-kWK"/>
+                    <navigationItem key="navigationItem" title="My Bucket List" id="YLx-Zd-kWK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zi-Yp-gdo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,12 +177,19 @@
     <resources>
         <image name="cloud.sun.fill" catalog="system" width="128" height="93"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="weather" width="112.5" height="112.5"/>
         <image name="xmark.bin.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
