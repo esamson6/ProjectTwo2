@@ -20,7 +20,6 @@ class GrayViewController: UIViewController {
         bucketTableView.delegate = self
         bucketTableView.dataSource = self
         
-
     }
     
     }
