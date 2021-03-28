@@ -130,45 +130,17 @@
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="About Me " id="vDb-ov-ZZA"/>
+                    <connections>
+                        <outlet property="erinLabel" destination="IYO-lb-ebd" id="xQ0-Nn-yVY"/>
+                        <outlet property="myMajorIsinLabel" destination="4Px-MC-B5g" id="Kjr-4d-8k4"/>
+                        <outlet property="myMajorLabel" destination="cfg-Pe-rP2" id="IAJ-Ne-HnJ"/>
+                        <outlet property="myNameIsLabel" destination="lT0-PU-Px7" id="1nW-Uw-Ikz"/>
+                        <outlet property="springClassesLabel" destination="yPG-t8-a7D" id="F8a-uB-aTS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcv-DJ-vyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="911.59420289855075" y="-17.410714285714285"/>
-        </scene>
-        <!--My Traveling Bucket List-->
-        <scene sceneID="oiz-iO-QOM">
-            <objects>
-                <viewController id="ZZJ-fT-GxP" customClass="BucketListViewController" customModule="ProjectTwo2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fWM-kq-MVq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GPT-8o-S6n">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="ZZJ-fT-GxP" id="HAc-PZ-ZGZ"/>
-                                    <outlet property="delegate" destination="ZZJ-fT-GxP" id="Laa-GX-xKT"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="PhB-5j-0Ew"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="GPT-8o-S6n" firstAttribute="top" secondItem="PhB-5j-0Ew" secondAttribute="top" id="Nvg-SZ-YqK"/>
-                            <constraint firstItem="PhB-5j-0Ew" firstAttribute="trailing" secondItem="GPT-8o-S6n" secondAttribute="trailing" id="TmL-1C-uqH"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="GPT-8o-S6n" secondAttribute="bottom" id="d4A-7r-kKr"/>
-                            <constraint firstItem="GPT-8o-S6n" firstAttribute="leading" secondItem="PhB-5j-0Ew" secondAttribute="leading" id="dhN-kU-0wI"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="My Traveling Bucket List" id="kXn-AB-TaX"/>
-                    <connections>
-                        <outlet property="tableView" destination="GPT-8o-S6n" id="1eT-mM-RUO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eej-dK-Uor" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3195.6521739130435" y="-17.410714285714285"/>
+            <point key="canvasLocation" x="484" y="-17"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3KM-cY-vdX">
@@ -182,7 +154,6 @@
                     <connections>
                         <segue destination="ZyX-95-Oa6" kind="relationship" relationship="viewControllers" id="SY4-Ir-P03"/>
                         <segue destination="qiW-o6-xN7" kind="relationship" relationship="viewControllers" id="uqc-2p-CbS"/>
-                        <segue destination="tSO-tk-gr4" kind="relationship" relationship="viewControllers" id="6oC-sv-2DE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwu-QX-dG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -226,25 +197,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Qn-nn-SzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-209" y="-17"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="Nai-nv-vQF">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tSO-tk-gr4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ofd-V1-9Vz"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="c7k-gb-LJC">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ZZJ-fT-GxP" kind="relationship" relationship="rootViewController" id="EAV-k8-KqP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bw8-7t-d1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2175" y="-27"/>
         </scene>
     </scenes>
     <resources>
