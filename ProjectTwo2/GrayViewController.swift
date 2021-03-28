@@ -28,7 +28,7 @@ class GrayViewController: UIViewController {
 extension GrayViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You clicked on the cell.")
+        print("We all should go on Vacation.")
         
     }
     
