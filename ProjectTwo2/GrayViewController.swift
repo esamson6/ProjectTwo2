@@ -12,6 +12,7 @@ class GrayViewController: UIViewController {
     
     @IBOutlet weak var bucketTableView: UITableView!
     
+    var bucket = ["Visit Japan", "Visit Italy", "Fish in Alaska", "Cruise in Norwegian Mediterranean Cruise", "Shop at Mall of America Minnesota"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +33,12 @@ extension GrayViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return bucket.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = bucketTableView.dequeueReusableCell(withIdentifier: "bucketcell", for: indexPath)
-        cell.textLabel?.text = "My bucket list."
+        cell.textLabel?.text = bucket[indexPath.row]
         return cell
     }
     
